@@ -1,0 +1,93 @@
+/* Components */
+
+@import url("components/landing.css");
+@import url("components/about_section.css");
+@import url("components/gallery_section.css");
+@import url("components/contact_section.css");
+@import url("components/footer.css");
+
+/* Global Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Ruhl";
+  src: url("fonts/FrankRuhlLibre-Regular.ttf");
+}
+@font-face {
+  font-family: "Ruhl Medium";
+  src: url("fonts/FrankRuhlLibre-Medium.ttf");
+}
+@font-face {
+  font-family: "Vibes";
+  src: url("fonts/GreatVibes-Regular.ttf");
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%; /* 1rem = 10px */
+  --header1: calc(3rem + 1vw);
+  --header2: calc(3.5rem + 1vw);
+  --header3: calc(3rem + 1vw);
+  --header4: calc(1.2rem + 1vw);
+  --text: calc(1.4rem + 1vw);
+  --big: calc(6rem + 1vw);
+  --special-color: #906272;
+  --background-color: #404040;
+  --grey-text: #525252;
+}
+body {
+  font-family: "Ruhl", sans-serif;
+  animation: opening 1s ease-in-out;
+}
+h1 {
+  font-size: var(--header1);
+  font-family: "Vibes", sans-serif;
+}
+h2 {
+  font-size: var(--header2);
+}
+h3 {
+  font-size: var(--header3);
+}
+h4,
+h5 {
+  font-size: var(--header4);
+}
+li,
+button,
+label,
+input,
+a,
+p {
+  font-size: var(--text);
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+ul {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 1700px) {
+  html {
+    --header1: 3rem;
+    --header2: 3.5rem;
+    --header3: 3rem;
+    --header4: 1.2rem;
+    --text: 1.4rem;
+    --big: 6rem;
+  }
+}

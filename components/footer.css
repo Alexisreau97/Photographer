@@ -1,0 +1,14 @@
+footer {
+  background: var(--background-color);
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+  min-height: 10vh;
+}
+footer ul {
+  display: flex;
+  justify-content: space-around;
+}
+footer h4 {
+  padding-top: 2rem;
+}
